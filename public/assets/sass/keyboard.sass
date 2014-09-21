@@ -1,0 +1,152 @@
+@import "compass/css3/transform"
+
+// Colours
+$black: #4d4d4d
+$keyboard: #f5f3f1
+$text: #555
+
+/* -------------------------------------
+ * style
+ * ------------------------------------- */
+
+/*------- Keyboard -------*/
+
+#keyboard
+  // padding: 30px 8px 13px
+  // background: $black
+  // // background: $keyboard
+  // // background: -webkit-linear-gradient(top, #e5e2e1, #f5f3f1, #e5e2e1)
+  // // background: -moz-linear-gradient(top, #e5e2e1, #f5f3f1, #e5e2e1)
+  // // background: -ms-linear-gradient(top, #e5e2e1, #f5f3f1, #e5e2e1)
+  // // background: -o-linear-gradient(top, #e5e2e1, #f5f3f1, #e5e2e1)
+  // // background: linear-gradient(top, #e5e2e1, #f5f3f1, #e5e2e1)
+  // border-radius: 5px
+  // box-shadow: 0 0 10px rgba(0,0,0,0.2), inset 0 0 3px rgba(0,0,0,0.3)
+  -webkit-transform: rotateX(15deg)
+  -ms-transform: rotateX(15deg)
+  -o-transform: rotateX(15deg)
+
+#main
+  // padding: 2px
+  // border-radius: 4px
+  overflow: visible
+  background: $black
+  width: 430px
+  padding: 1em
+  border-radius: 20px
+.key
+  width: 40px
+  height: 45px
+  margin: 2px
+  border-width: 3px 7px 10px
+  border-style: solid
+  border-radius: 4px
+  float: left
+  background: #a8aeb8
+  border-color: #c4c7cc #adb9cc #96a6bd
+  position: relative
+  z-index: 1
+
+  &.pressed
+    -webkit-transform: scale(0.95, 0.95)
+    -moz-transform: scale(0.95, 0.95)
+    -ms-transform: scale(0.95, 0.95)
+    -o-transform: scale(0.95, 0.95)
+    transform: scale(0.95, 0.95)
+
+  .keycap
+    width: inherit
+    height: inherit
+    font-size: 15px
+    line-height: 45px
+    text-indent: 7px
+    background: #cdd3de
+    background: -webkit-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2)
+    background: -moz-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2)
+    background: -ms-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2)
+    background: -o-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2)
+    background: linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2)
+    box-shadow: 0 0 10px rgba(0,0,0,0.2)
+    border-radius: 4px
+    position: relative
+
+.top
+  padding: 3px 5px 0 0
+  font-size: 12px
+  font-style: italic
+  text-align: right
+  line-height: 1
+  display: block
+.bottom
+  width: inherit
+  line-height: 20px
+  display: block
+.side
+  font-size: 10px
+  line-height: 1
+  display: block
+  position: absolute
+  left: 4px
+  bottom: -10px
+  -webkit-transform: rotateX(50deg)
+  -moz-transform: rotateX(50deg)
+  -ms-transform: rotateX(50deg)
+  -o-transform: rotateX(50deg)
+  transform: rotateX(50deg)
+
+// Keys
+.k-1x5
+  width: 66px
+
+.k-5x1
+  height: 76px
+
+.key-2x
+  height: 106px
+// Columns
+.col
+  display: inline-block
+  width: 54px
+  position: relative
+
+.col-1
+  width: 80px
+
+  > div:last-child
+    float: right
+    margin-right: -2px
+
+.col-3, .col-5
+  top: -5px
+.col-4
+  top: -10px
+
+.col-6, .col-7
+  top: -62px
+
+.thumb-cluster-left
+  width: 175px
+  position: absolute
+  +transform(rotate(35deg))
+  left: 281px
+  top: 215px
+  background: $black
+  width: 185px
+  padding: 1em
+  border-radius: 20px
+  padding-left: 5em
+
+  .thumb-col-1
+    > div:first-child
+      visibility: hidden
+
+.mod
+  background: #7D8188
+  border-color: #878A8F #787B80 #8B8F96
+  .keycap
+    background: #cdd3de
+    background: -webkit-linear-gradient(left, #7D8188, #9498A0, #9398A0)
+    background: -moz-linear-gradient(left, #7D8188, #9498A0, #9398A0)
+    background: -ms-linear-gradient(left, #7D8188, #9498A0, #9398A0)
+    background: -o-linear-gradient(left, #7D8188, #9498A0, #9398A0)
+    background: linear-gradient(left, #7D8188, #9498A0, #9398A0)
