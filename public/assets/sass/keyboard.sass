@@ -22,11 +22,13 @@ $text: #555
   // // background: linear-gradient(top, #e5e2e1, #f5f3f1, #e5e2e1)
   // border-radius: 5px
   // box-shadow: 0 0 10px rgba(0,0,0,0.2), inset 0 0 3px rgba(0,0,0,0.3)
+  width: 1200px
+  margin: 0 auto
   -webkit-transform: rotateX(15deg)
   -ms-transform: rotateX(15deg)
   -o-transform: rotateX(15deg)
 
-#main
+.ergodox
   // padding: 2px
   // border-radius: 4px
   overflow: visible
@@ -34,6 +36,15 @@ $text: #555
   width: 430px
   padding: 1em
   border-radius: 20px
+  position: relative
+  padding-top: 6em
+
+.ergodox-right
+  position: absolute
+  top: 0
+  right: 0
+  +transform(rotateY(180deg))
+
 .key
   width: 40px
   height: 45px
@@ -117,19 +128,19 @@ $text: #555
     margin-right: -2px
 
 .col-3, .col-5
-  top: -5px
-.col-4
   top: -10px
+.col-4
+  top: -15px
 
 .col-6, .col-7
   top: -62px
 
-.thumb-cluster-left
+.thumb-cluster
   width: 175px
   position: absolute
   +transform(rotate(35deg))
   left: 281px
-  top: 215px
+  top: 18.5em
   background: $black
   width: 185px
   padding: 1em
