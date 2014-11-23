@@ -1,12 +1,21 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script src="public/assets/js/libs/jquery-1.11.1.min.js"></script>
+    <script src="public/assets/js/libs/jquery.alterclass.js"></script>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.0.0/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.0.0/js/bootstrap-toggle.min.js"></script>
     <link rel="stylesheet" href="public/assets/css/keyboard.css"/>
+    <script src="public/assets/js/keyboard.js"></script>
+
   </head>
   <body>
-    <h1>Hello, World</h1>
+    <div class="header">
+      <h1>Color your Ergodox</h1>
+      <h4>Test out different keycap colors</h4>
+    </div>
     <div id="keyboard">
       <div class="ergodox ergodox-left">
         <div class="col col-1">
@@ -309,36 +318,30 @@
       </div>
     </div>
     <div id="colors">
-      <h3>Colors:</h3>
-      <div class="base-keys">
-        <h3>Base Keys:</h3>
-        <div class="black"></div>
-        <div class="orange"></div>
-        <div class="green"></div>
-        <div class="red"></div>
-        <div class="blue"></div>
-        <div class="grey"></div>
-        <div class="pink"></div>
-        <div class="purple"></div>
-        <div class="white"></div>
-        <div class="yellow"></div>
+      <h3>Keycap Colors:</h3>
+      <p>
+        Toggle to choose between base keys and modifier keys
+      </p>
+      <div class="checkbox">
+        <input id="keys-toggle" type="checkbox" data-toggle="toggle" data-on="Base Keys" data-off="Modifier Keys">
       </div>
-      <div class="modifiers-keys">
-        <h3>Modifier Keys:</h3>
-        <div class="black"></div>
-        <div class="orange"></div>
-        <div class="green"></div>
-        <div class="red"></div>
-        <div class="blue"></div>
-        <div class="grey"></div>
-        <div class="pink"></div>
-        <div class="purple"></div>
-        <div class="white"></div>
-        <div class="yellow"></div>
+      <div class="keycap-colors">
+        <div class="col-xs-12">
+          <div class="key-color black"></div>
+          <div class="key-color orange"></div>
+          <div class="key-color green"></div>
+          <div class="key-color red"></div>
+          <div class="key-color blue"></div>
+        </div>
+
+        <div class="col-xs-12">
+          <div class="key-color grey"></div>
+          <div class="key-color pink"></div>
+          <div class="key-color purple"></div>
+          <div class="key-color white"></div>
+          <div class="key-color yellow"></div>
+        </div>
       </div>
     </div>
   </body>
-  <script src="public/assets/js/libs/jquery-1.11.1.min.js"></script>
-  <script src="public/assets/js/libs/jquery.alterclass.js"></script>
-  <script src="public/assets/js/keyboard.js"></script>
 </html>
