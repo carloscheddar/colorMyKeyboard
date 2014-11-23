@@ -21,19 +21,13 @@ $yellow: #dbbc3c
 /*------- Keyboard -------*/
 
 body
-  background: #00a2d3
+  background: #8586E4
+
+.header
+  text-align: center
+  margin-bottom: 4em
 
 #keyboard
-  // padding: 30px 8px 13px
-  // background: $black
-  // // background: $keyboard
-  // // background: -webkit-linear-gradient(top, #e5e2e1, #f5f3f1, #e5e2e1)
-  // // background: -moz-linear-gradient(top, #e5e2e1, #f5f3f1, #e5e2e1)
-  // // background: -ms-linear-gradient(top, #e5e2e1, #f5f3f1, #e5e2e1)
-  // // background: -o-linear-gradient(top, #e5e2e1, #f5f3f1, #e5e2e1)
-  // // background: linear-gradient(top, #e5e2e1, #f5f3f1, #e5e2e1)
-  // border-radius: 5px
-  // box-shadow: 0 0 10px rgba(0,0,0,0.2), inset 0 0 3px rgba(0,0,0,0.3)
   width: 1200px
   margin: 0 auto 10em
   +transform(rotateX(15deg))
@@ -82,12 +76,6 @@ body
     font-size: 15px
     line-height: 45px
     text-indent: 7px
-    background: #cdd3de
-    background: -webkit-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2)
-    background: -moz-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2)
-    background: -ms-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2)
-    background: -o-linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2)
-    background: linear-gradient(left, #bbc3d2, #cdd3de, #bbc3d2)
     box-shadow: 0 0 10px rgba(0,0,0,0.2)
     border-radius: 4px
     position: relative
@@ -226,14 +214,18 @@ body
     background: $yellow
 // Colors
 #colors
-  .base-keys,.modifiers-keys
-    width: 49%
-    display: inline-block
-    > div
+  h3, p
+    text-align: center
+  .checkbox .toggle
+    margin: 0 auto
+    display: block
+
+  .keycap-colors
+    div > div
       display: inline-block
       cursor: pointer
-      height: 20px
-      width: 40px
+      height: 40px
+      width: 19%
     .orange
       background: $orange
     .black
