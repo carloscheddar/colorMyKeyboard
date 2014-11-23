@@ -1,15 +1,27 @@
 @import "compass/css3/transform"
 
 // Colours
-$black: #4d4d4d
+$black: #171716
 $keyboard: #f5f3f1
 $text: #555
-
+$white-background: #D6D6D6
+$orange: #ee4c22
+$green: #00e496
+$blue: #00ade6
+$red: #b80413
+$grey: #7d837d
+$pink: #cf72a0
+$purple: #54496b
+$white: #e2e8e2
+$yellow: #dbbc3c
 /* -------------------------------------
  * style
  * ------------------------------------- */
 
 /*------- Keyboard -------*/
+
+body
+  background: #00a2d3
 
 #keyboard
   // padding: 30px 8px 13px
@@ -23,19 +35,22 @@ $text: #555
   // border-radius: 5px
   // box-shadow: 0 0 10px rgba(0,0,0,0.2), inset 0 0 3px rgba(0,0,0,0.3)
   width: 1200px
-  margin: 0 auto
-  -webkit-transform: rotateX(15deg)
-  -ms-transform: rotateX(15deg)
-  -o-transform: rotateX(15deg)
+  margin: 0 auto 10em
+  +transform(rotateX(15deg))
 
-.ergodox
-  // padding: 2px
-  // border-radius: 4px
-  overflow: visible
-  background: $black
-  width: 430px
+.ergodox, .thumb-cluster,
+.key
+  box-sizing: content-box
+
+.ergodox, .thumb-cluster
+  background: $white-background
   padding: 1em
   border-radius: 20px
+
+
+.ergodox
+  overflow: visible
+  width: 430px
   position: relative
   padding-top: 6em
 
@@ -59,11 +74,7 @@ $text: #555
   z-index: 1
 
   &.pressed
-    -webkit-transform: scale(0.95, 0.95)
-    -moz-transform: scale(0.95, 0.95)
-    -ms-transform: scale(0.95, 0.95)
-    -o-transform: scale(0.95, 0.95)
-    transform: scale(0.95, 0.95)
+    +transform(scale(0.95, 0.95))
 
   .keycap
     width: inherit
@@ -139,17 +150,10 @@ $text: #555
   width: 175px
   position: absolute
   +transform(rotate(35deg))
-  left: 281px
-  top: 18.5em
-  background: $black
+  left: 274px
+  top: 20em
   width: 185px
-  padding: 1em
-  border-radius: 20px
-  padding-left: 5em
-
-  .thumb-col-1
-    > div:first-child
-      visibility: hidden
+  padding-left: 6em
 
 .mod
   background: #7D8188
@@ -161,3 +165,93 @@ $text: #555
     background: -ms-linear-gradient(left, #7D8188, #9498A0, #9398A0)
     background: -o-linear-gradient(left, #7D8188, #9498A0, #9398A0)
     background: linear-gradient(left, #7D8188, #9498A0, #9398A0)
+
+.orange-keys
+  background: $orange
+  border-color: $orange
+  .keycap
+    background: $orange
+
+.black-keys
+  background: $black
+  border-color: $black #272626 $black
+  .keycap
+    background: -webkit-linear-gradient(left, $black, #272626, $black)
+
+.green-keys
+  background: $green
+  border-color: $green
+  .keycap
+    background: $green
+
+.red-keys
+  background: $red
+  border-color: $red
+  .keycap
+    background: $red
+.blue-keys
+  background: $blue
+  border-color: $blue
+  .keycap
+    background: $blue
+
+.grey-keys
+  background: $grey
+  border-color: $grey
+  .keycap
+    background: $grey
+
+.pink-keys
+  background: $pink
+  border-color: $pink
+  .keycap
+    background: $pink
+
+.purple-keys
+  background: $purple
+  border-color: $purple
+  .keycap
+    background: $purple
+
+.white-keys
+  background: $white
+  border-color: $white
+  .keycap
+    background: $white
+
+.yellow-keys
+  background: $yellow
+  border-color: $yellow
+  .keycap
+    background: $yellow
+// Colors
+#colors
+  .base-keys,.modifiers-keys
+    width: 49%
+    display: inline-block
+    > div
+      display: inline-block
+      cursor: pointer
+      height: 20px
+      width: 40px
+    .orange
+      background: $orange
+    .black
+      background: $black
+    .green
+      background: $green
+    .red
+      background: $red
+    .blue
+      background: $blue
+    .grey
+      background: $grey
+    .pink
+      background: $pink
+    .purple
+      background: $purple
+    .white
+      background: $white
+    .yellow
+      background: $yellow
+
