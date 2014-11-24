@@ -162,9 +162,13 @@ body
 
 .black-keys
   background: $black
-  border-color: $black #272626 $black
+  border-color: $black
   .keycap
     background: -webkit-linear-gradient(left, $black, #272626, $black)
+    background: -moz-linear-gradient(left, $black, #272626, $black)
+    background: -ms-linear-gradient(left, $black, #272626, $black)
+    background: -o-linear-gradient(left, $black, #272626, $black)
+    background: linear-gradient(left, $black, #272626, $black)
 
 .green-keys
   background: $green
@@ -227,6 +231,7 @@ body
       height: 40px
       width: 20%
       float: left
+      margin-top: 0.5em
     .orange
       background: $orange
     .black

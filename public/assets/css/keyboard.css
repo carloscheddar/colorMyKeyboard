@@ -1,0 +1,368 @@
+/* -------------------------------------
+ * style
+ * ------------------------------------- */
+/*------- Keyboard ------- */
+/* line 23, ../sass/keyboard.sass */
+body {
+  background: #8586E4;
+}
+
+/* line 26, ../sass/keyboard.sass */
+.header {
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+/* line 30, ../sass/keyboard.sass */
+#keyboard {
+  width: 1200px;
+  margin: 0 auto 10em;
+  -moz-transform: rotateX(15deg);
+  -ms-transform: rotateX(15deg);
+  -webkit-transform: rotateX(15deg);
+  transform: rotateX(15deg);
+}
+
+/* line 35, ../sass/keyboard.sass */
+.ergodox, .thumb-cluster,
+.key {
+  box-sizing: content-box;
+}
+
+/* line 39, ../sass/keyboard.sass */
+.ergodox, .thumb-cluster {
+  background: #D6D6D6;
+  padding: 1em;
+  border-radius: 20px;
+}
+
+/* line 45, ../sass/keyboard.sass */
+.ergodox {
+  overflow: visible;
+  width: 430px;
+  position: relative;
+  padding-top: 6em;
+}
+
+/* line 51, ../sass/keyboard.sass */
+.ergodox-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/* line 57, ../sass/keyboard.sass */
+.key {
+  width: 40px;
+  height: 45px;
+  margin: 2px;
+  border-width: 3px 7px 10px;
+  border-style: solid;
+  border-radius: 4px;
+  float: left;
+  background: #a8aeb8;
+  border-color: #c4c7cc #adb9cc #96a6bd;
+  position: relative;
+  z-index: 1;
+}
+/* line 70, ../sass/keyboard.sass */
+.key.pressed {
+  -moz-transform: scale(0.95, 0.95);
+  -ms-transform: scale(0.95, 0.95);
+  -webkit-transform: scale(0.95, 0.95);
+  transform: scale(0.95, 0.95);
+}
+/* line 73, ../sass/keyboard.sass */
+.key .keycap {
+  width: inherit;
+  height: inherit;
+  font-size: 15px;
+  line-height: 45px;
+  text-indent: 7px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: relative;
+}
+
+/* line 83, ../sass/keyboard.sass */
+.top {
+  padding: 3px 5px 0 0;
+  font-size: 12px;
+  font-style: italic;
+  text-align: right;
+  line-height: 1;
+  display: block;
+}
+
+/* line 90, ../sass/keyboard.sass */
+.bottom {
+  width: inherit;
+  line-height: 20px;
+  display: block;
+}
+
+/* line 94, ../sass/keyboard.sass */
+.side {
+  font-size: 10px;
+  line-height: 1;
+  display: block;
+  position: absolute;
+  left: 4px;
+  bottom: -10px;
+  -webkit-transform: rotateX(50deg);
+  -moz-transform: rotateX(50deg);
+  -ms-transform: rotateX(50deg);
+  -o-transform: rotateX(50deg);
+  transform: rotateX(50deg);
+}
+
+/* line 108, ../sass/keyboard.sass */
+.k-1x5 {
+  width: 66px;
+}
+
+/* line 111, ../sass/keyboard.sass */
+.k-5x1 {
+  height: 76px;
+}
+
+/* line 114, ../sass/keyboard.sass */
+.key-2x {
+  height: 106px;
+}
+
+/* line 117, ../sass/keyboard.sass */
+.col {
+  display: inline-block;
+  width: 54px;
+  position: relative;
+}
+
+/* line 122, ../sass/keyboard.sass */
+.col-1 {
+  width: 80px;
+}
+/* line 125, ../sass/keyboard.sass */
+.col-1 > div:last-child {
+  float: right;
+  margin-right: -2px;
+}
+
+/* line 129, ../sass/keyboard.sass */
+.col-3, .col-5 {
+  top: -10px;
+}
+
+/* line 131, ../sass/keyboard.sass */
+.col-4 {
+  top: -15px;
+}
+
+/* line 134, ../sass/keyboard.sass */
+.col-6, .col-7 {
+  top: -62px;
+}
+
+/* line 137, ../sass/keyboard.sass */
+.thumb-cluster {
+  width: 175px;
+  position: absolute;
+  -moz-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+  left: 274px;
+  top: 20em;
+  width: 185px;
+  padding-left: 6em;
+}
+
+/* line 146, ../sass/keyboard.sass */
+.mod {
+  background: #7D8188;
+  border-color: #878A8F #787B80 #8B8F96;
+}
+/* line 149, ../sass/keyboard.sass */
+.mod .keycap {
+  background: #cdd3de;
+  background: -webkit-linear-gradient(left, #7D8188, #9498A0, #9398A0);
+  background: -moz-linear-gradient(left, #7D8188, #9498A0, #9398A0);
+  background: -ms-linear-gradient(left, #7D8188, #9498A0, #9398A0);
+  background: -o-linear-gradient(left, #7D8188, #9498A0, #9398A0);
+  background: linear-gradient(left, #7D8188, #9498A0, #9398A0);
+}
+
+/* line 157, ../sass/keyboard.sass */
+.orange-keys {
+  background: #ee4c22;
+  border-color: #ee4c22;
+}
+/* line 160, ../sass/keyboard.sass */
+.orange-keys .keycap {
+  background: #ee4c22;
+}
+
+/* line 163, ../sass/keyboard.sass */
+.black-keys {
+  background: #171716;
+  border-color: #171716;
+}
+/* line 166, ../sass/keyboard.sass */
+.black-keys .keycap {
+  background: -webkit-linear-gradient(left, #171716, #272626, #171716);
+  background: -moz-linear-gradient(left, #171716, #272626, #171716);
+  background: -ms-linear-gradient(left, #171716, #272626, #171716);
+  background: -o-linear-gradient(left, #171716, #272626, #171716);
+  background: linear-gradient(left, #171716, #272626, #171716);
+}
+
+/* line 173, ../sass/keyboard.sass */
+.green-keys {
+  background: #00e496;
+  border-color: #00e496;
+}
+/* line 176, ../sass/keyboard.sass */
+.green-keys .keycap {
+  background: #00e496;
+}
+
+/* line 179, ../sass/keyboard.sass */
+.red-keys {
+  background: #b80413;
+  border-color: #b80413;
+}
+/* line 182, ../sass/keyboard.sass */
+.red-keys .keycap {
+  background: #b80413;
+}
+
+/* line 184, ../sass/keyboard.sass */
+.blue-keys {
+  background: #00ade6;
+  border-color: #00ade6;
+}
+/* line 187, ../sass/keyboard.sass */
+.blue-keys .keycap {
+  background: #00ade6;
+}
+
+/* line 190, ../sass/keyboard.sass */
+.grey-keys {
+  background: #7d837d;
+  border-color: #7d837d;
+}
+/* line 193, ../sass/keyboard.sass */
+.grey-keys .keycap {
+  background: #7d837d;
+}
+
+/* line 196, ../sass/keyboard.sass */
+.pink-keys {
+  background: #cf72a0;
+  border-color: #cf72a0;
+}
+/* line 199, ../sass/keyboard.sass */
+.pink-keys .keycap {
+  background: #cf72a0;
+}
+
+/* line 202, ../sass/keyboard.sass */
+.purple-keys {
+  background: #54496b;
+  border-color: #54496b;
+}
+/* line 205, ../sass/keyboard.sass */
+.purple-keys .keycap {
+  background: #54496b;
+}
+
+/* line 208, ../sass/keyboard.sass */
+.white-keys {
+  background: #e2e8e2;
+  border-color: #e2e8e2;
+}
+/* line 211, ../sass/keyboard.sass */
+.white-keys .keycap {
+  background: #e2e8e2;
+}
+
+/* line 214, ../sass/keyboard.sass */
+.yellow-keys {
+  background: #dbbc3c;
+  border-color: #dbbc3c;
+}
+/* line 217, ../sass/keyboard.sass */
+.yellow-keys .keycap {
+  background: #dbbc3c;
+}
+
+/* line 220, ../sass/keyboard.sass */
+#colors {
+  margin-bottom: 2em;
+}
+/* line 222, ../sass/keyboard.sass */
+#colors h3, #colors p {
+  text-align: center;
+}
+/* line 224, ../sass/keyboard.sass */
+#colors .checkbox .toggle {
+  margin: 0 auto;
+  display: block;
+}
+/* line 229, ../sass/keyboard.sass */
+#colors .keycap-colors div > div {
+  cursor: pointer;
+  height: 40px;
+  width: 20%;
+  float: left;
+  margin-top: 0.5em;
+}
+/* line 235, ../sass/keyboard.sass */
+#colors .keycap-colors .orange {
+  background: #ee4c22;
+}
+/* line 237, ../sass/keyboard.sass */
+#colors .keycap-colors .black {
+  background: #171716;
+}
+/* line 239, ../sass/keyboard.sass */
+#colors .keycap-colors .green {
+  background: #00e496;
+}
+/* line 241, ../sass/keyboard.sass */
+#colors .keycap-colors .red {
+  background: #b80413;
+}
+/* line 243, ../sass/keyboard.sass */
+#colors .keycap-colors .blue {
+  background: #00ade6;
+}
+/* line 245, ../sass/keyboard.sass */
+#colors .keycap-colors .grey {
+  background: #7d837d;
+}
+/* line 247, ../sass/keyboard.sass */
+#colors .keycap-colors .pink {
+  background: #cf72a0;
+}
+/* line 249, ../sass/keyboard.sass */
+#colors .keycap-colors .purple {
+  background: #54496b;
+}
+/* line 251, ../sass/keyboard.sass */
+#colors .keycap-colors .white {
+  background: #e2e8e2;
+}
+/* line 253, ../sass/keyboard.sass */
+#colors .keycap-colors .yellow {
+  background: #dbbc3c;
+}
+
+/* line 256, ../sass/keyboard.sass */
+footer {
+  text-align: center;
+}
