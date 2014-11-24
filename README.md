@@ -1,5 +1,5 @@
 #Color My Keyboard
-I recently bought an [Ergodox](https://www.massdrop.com/buy/ergodox?s=ergodox)  and didn't know which keycap color to choose from so I created this tool to visualize different keycap color schemes for the Ergodox.
+I recently bought an [Ergodox](https://www.massdrop.com/buy/ergodox?s=ergodox)  and didn't know which keycap color to choose from so I created this tool to visualize different keycap color schemes for the Ergodox. [Demo](http://carloscheddar.github.io/colorMyKeyboard/)
 
 ##Colors
 The 10 colors are the ones currently offered by [Signature Plastics Ergodox Set](http://keyshop.pimpmykeyboard.com/products/full-keysets/dsa-blank-sets-1).
